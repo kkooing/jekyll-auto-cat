@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version          = Jekyll::AutoCat::VERSION
   
   s.description      = "jekyll-auto-cat categorizes posts through the hierarchy under /_posts and organizes them in the /_site folder."
-  s.homepage         = "https://github.com/kkooing"
+  s.homepage         = "https://github.com/kkooing/jekyll-auto-cat"
   s.license          = "MIT"
 
   s.files            = Dir["lib/**/*"]
@@ -18,6 +18,4 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.4.0"
 
   s.add_dependency "jekyll", ">= 3.7", "< 5.0"
-
-  s.add_development_dependency "bundler"
 end
