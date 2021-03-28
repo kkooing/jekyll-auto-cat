@@ -1,0 +1,23 @@
+require_relative "lib/jekyll-auto-cat/version"
+
+Gem::Specification.new do |s|
+  s.name             = "jekyll-auto-cat"
+  s.summary          = "auto categorization of posts by folder hierarchy"
+  s.authors          = ["kkooing"]
+  s.email            = ["kdw7968@naver.com"]
+  s.version          = Jekyll::AutoCat::VERSION
+  
+  s.description      = "jekyll-auto-cat categorizes posts through the hierarchy under /_posts and organizes them in the /_site folder."
+  s.homepage         = "https://github.com/kkooing"
+  s.license          = "MIT"
+
+  s.files            = Dir["lib/**/*"]
+  s.extra_rdoc_files = Dir["README.md", "History.markdown", "LICENSE.txt"]
+  s.require_paths    = ["lib"]
+
+  s.required_ruby_version = ">= 2.4.0"
+
+  s.add_dependency "jekyll", ">= 3.7", "< 5.0"
+
+  s.add_development_dependency "bundler"
+end
